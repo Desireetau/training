@@ -16,6 +16,7 @@ public class Number5 {
         int r=0;
         do{
             System.out.println(num[r]);
+
             r++;
         }while (r<num.length);
     }
