@@ -14,8 +14,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Number5 {
-    public String baseurl;
-    public WebDriver driver;
+    private String baseurl;
+    private WebDriver driver;
 
     @Before
     public void setup(){

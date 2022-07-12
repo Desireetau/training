@@ -11,8 +11,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Number6 {
-    public String baseurl;
-    public WebDriver driver;
+    private String baseurl;
+    private WebDriver driver;
 
     @Before
     public void setup(){

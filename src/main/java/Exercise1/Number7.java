@@ -10,8 +10,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Number7 {
-    public String baseurl;
-    public WebDriver driver;
+    private String baseurl;
+    private WebDriver driver;
 
     @Before
     public void setup(){
