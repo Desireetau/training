@@ -17,7 +17,7 @@ public class openJUnit {
     public void setup(){
         WebDriverManager.chromedriver().setup();
          driver = new ChromeDriver();
-        baseurl = ("https://datamateinc.com/");
+        baseurl = ("https://datamateinc.co.za");
         driver.manage().window().maximize();
 
     }
@@ -40,10 +40,10 @@ public class openJUnit {
         driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[2]/div/div/div/section[3]/div/div[1]/div/div/div/div/form/div[1]/div[2]/div[1]/div[2]/input")).sendKeys("Modu");
 
 
-/*        WebElement selectCountry = driver.findElement(By.xpath("//*[@id='wpforms-3337-field_15-container']/div/div[1]"));
+        WebElement selectCountry = driver.findElement(By.xpath("//*[@id='wpforms-3337-field_15-container']/div/div[1]"));
         Select country = new Select(selectCountry);
         country.selectByValue("Algeria");
-        Thread.sleep(5000);*/
+        Thread.sleep(5000);
 
         String Title =driver.findElement(By.xpath("//*[@id='wpforms-3337-field_20-container']/label")).getText();
         System.out.println(Title);

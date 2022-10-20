@@ -25,33 +25,48 @@ public class Number8 {
     public void conversion() throws InterruptedException {
         driver.get(baseurl);
 
-
+        //Enter the number to convert
         driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[1]/form/div/center/table/tbody/tr[1]/td/input")).sendKeys("4");
 
         Thread.sleep(1000);
 
+        // selecting Kilometers to convert From
         WebElement selectFrom = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[1]/form/div/center/table/tbody/tr[2]/td[1]/select"));
         Select From = new Select(selectFrom);
         From.selectByVisibleText("kilometer");
 
-        Thread.sleep(1000);
+        Thread.sleep(3000);
 
+        // selecting meters to convert To
         WebElement selectTo = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[1]/form/div/center/table/tbody/tr[2]/td[2]/select"));
         Select To = new Select(selectTo);
         To.selectByVisibleText("meter");
 
         Thread.sleep(1000);
+
+        //Clicking the convert Button
         driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[1]/form/div/center/table/tbody/tr[3]/td/input")).click();
 
-        Thread.sleep(2000);
-        String text = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[1]/form/div/center/table/tbody/tr[4]/td/input")).getText();
-        Thread.sleep(2000);
+        Thread.sleep(1000);
+
+        //Display the conversion in the console
+
+        WebElement results = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[1]/form/div/center/table/tbody/tr[4]/td/input"));
+        String text = results.getAttribute("value");
+        Thread.sleep(1000);
         System.out.println(text);
 
         Thread.sleep(2000);
-        String value = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[1]/form/div/center/table/tbody/tr[1]/td/input")).getText();
+        //Displaying  the number that has been entered in the console
+
+        WebElement enteredValue = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[1]/form/div/center/table/tbody/tr[1]/td/input"));
+        String val = enteredValue.getAttribute("value");
         Thread.sleep(2000);
-        System.out.println(value);
+        System.out.println(val);
+
+        //Check if the answer is correct
+        String answer = "4 000 meter";
+        System.out.println(text.contains(answer));
 
     }
     @AfterMethod

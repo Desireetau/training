@@ -11,7 +11,7 @@ public class OpenDatamate {
 
         WebDriver driver = new ChromeDriver();
         WebDriverManager.chromedriver().setup();
-        driver.get("https://datamateinc.com/");
+        driver.get("https://www.google.com/");
         driver.manage().window().maximize();
         Thread.sleep(3000);
 

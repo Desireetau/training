@@ -1,0 +1,1 @@
+{"uuid":"c7b110c0-805a-46ec-b91c-e290810f116b","name":"SeleniumTraining","children":["49422e01-97c6-46f6-a736-ebac39a6493b"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1660240960549,"stop":1660240965107}],"afters":[],"links":[],"start":1660240960532,"stop":1660241006164}
