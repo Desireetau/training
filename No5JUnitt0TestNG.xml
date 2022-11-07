@@ -1,0 +1,12 @@
+
+<suite name="Converted JUnit class-Number 5">
+    <test verbose="2" preserve-order="true" name="number5" junit="true">
+        <classes>
+            <class name="Exercise2.Number2">
+                <methods>
+                    <include name="searchMandela"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,17 @@
+
+<suite name="Converted JUnit suite">
+    <test verbose="2" preserve-order="true" name="JUnitTests" junit="true">
+        <classes>
+            <class name="Exercise2.Number1">
+                <methods>
+                    <include name="datamateRegPage"/>
+                </methods>
+            </class>
+            <class name="Exercise2.Number2">
+                <methods>
+                    <include name="searchMandela"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
