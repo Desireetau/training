@@ -1,4 +1,4 @@
-package cucumberPkg;
+package cucumberStepDefPkg;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

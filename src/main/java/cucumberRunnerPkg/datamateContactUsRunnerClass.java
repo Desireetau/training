@@ -6,9 +6,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/main/resources/registerDelegates.feature",
+        features = "src/main/resources/datamateContactUs.feature",
         glue = "cucumberStepDefPkg"
 )
-public class regRunnderClassDDT {
-
+public class datamateContactUsRunnerClass {
 }

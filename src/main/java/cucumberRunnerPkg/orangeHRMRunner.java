@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
         features = "src/main/resources/orangeHRM.feature",
-        glue = "cucumberPkg"
+        glue = "cucumberStepDefPkg"
 )
 public class orangeHRMRunner extends AbstractTestNGCucumberTests {
 
